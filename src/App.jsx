@@ -39,6 +39,7 @@ function App() {
           <div>
                <spanp>Website Managed by :</spanp> <h3>Rupendra Gangwar & Aditya Agrahari</h3>
           </div>
+          <br>
           <p>We’re working hard to bring Rec Fitness Club online. Stay tuned for updates!</p>
         </section>
       </main>
