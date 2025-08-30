@@ -36,6 +36,7 @@ function App() {
 
         <section className="construction">
           <h2>🚧 Website Under Construction 🚧</h2>
+          <spanp>Website Managed by :</spanp> <h3>Rupendra Gangwar & Aditya Agrahari</h3>
           <p>We’re working hard to bring Rec Fitness Club online. Stay tuned for updates!</p>
         </section>
       </main>
