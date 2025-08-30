@@ -1,0 +1,131 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a, #000);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.header .title {
+  font-size: 4rem;
+  color: #ff4c29;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.header .subtitle {
+  font-size: 1.4rem;
+  color: #bbb;
+}
+
+/* Main Content - 3 cards in one row */
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 5rem;
+  align-items: stretch;
+}
+
+section {
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #222, #111);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9);
+}
+
+/* Section headers */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ffd700, #ff4c29);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gym Timings */
+.schedule ul {
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.schedule .closed {
+  color: #ff3333;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Coach */
+.coach p {
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+/* Contact */
+.contact p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.contact a {
+  color: #ff4c29;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Under Construction */
+.construction {
+  grid-column: span 3;
+  margin-top: 1rem;
+  border: 2px dashed #ff4c29;
+  background: rgba(255, 76, 41, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  font-size: 0.9rem;
+  color: #aaa;
+}
