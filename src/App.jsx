@@ -30,7 +30,7 @@ function App() {
         <section className="contact">
           <h2>📞 Contact</h2>
           <p>📱 91207989995, 9935399223</p>
-          <p>🌐 <a href="https://www.recs-gym.vercel.app" target="_blank" rel="noreferrer">www.recs-gym.vercel.app</a></p>
+          <p>🌐 <a href="https://recs-gym.vercel.app" target="_blank" rel="noreferrer">www.recs-gym.vercel.app</a></p>
           <p>📧 rspandey2@gmail.com</p>
         </section>
 
