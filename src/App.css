@@ -39,7 +39,7 @@ body {
   color: #bbb;
 }
 
-/* Main Content - 3 cards in one row */
+/* Main Content */
 .main {
   flex: 1;
   display: grid;
@@ -70,7 +70,6 @@ h2 {
   font-weight: bold;
   background: linear-gradient(to right, #ffd700, #ff4c29);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -128,4 +127,46 @@ h2 {
   background: #111;
   font-size: 0.9rem;
   color: #aaa;
+}
+
+/* ------------------ Media Queries ------------------ */
+
+/* Tablet view (2 columns) */
+@media (max-width: 1023px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+
+  .construction {
+    grid-column: span 2;
+  }
+}
+
+/* Mobile view (1 column) */
+@media (max-width: 767px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .construction {
+    grid-column: span 1;
+  }
+
+  .header .title {
+    font-size: 2.5rem;
+  }
+
+  .header .subtitle {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
 }
